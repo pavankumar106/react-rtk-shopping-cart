@@ -1,0 +1,38 @@
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #0e1258;
+  div span {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .cart {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+
+    .cartText {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .cartCount {
+      background: #5f4fd5;
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 12px;
+      line-height: 1;
+      min-width: 18px;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}

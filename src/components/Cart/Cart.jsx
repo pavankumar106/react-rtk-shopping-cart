@@ -11,13 +11,19 @@ const Cart = () => {
       <div className="cartHeader">
         <span className="cartHeaderText">Your Cart</span>
       </div>
-      {items.map((cartItem) => (
-        <CartItem key={cartItem.id} cartItem={cartItem} />
-      ))}
-      <div className="cartTotal">
-        <span className="totalLabel">Total:</span>
-        <span className="totalPrice">price USD</span>
-      </div>
+      {items.length > 0 ? (
+        items.map((cartItem) => (
+          <CartItem key={cartItem.id} cartItem={cartItem} />
+        ))
+      ) : (
+        <div>No items in cart</div>
+      )}
+      {items.length > 0 && (
+        <div className="cartTotal">
+          <span className="totalLabel">Total:</span>
+          <span className="totalPrice">price USD</span>
+        </div>
+      )}
     </div>
   );
 };

@@ -14,6 +14,11 @@ const CartItem = ({ cartItem }) => {
             <span className="cartItemBrand">{brand}</span>
           </div>
         </div>
+        <div className="cartItemQuantity">
+          <span className="decrease">-</span>
+          <span className="quantity">Quantity: 1</span>
+          <span className="increase">+</span>
+        </div>
         <div className="cartItemPrice">
           <span className="price">{price} USD</span>
           <button className="removeItem">Remove</button>

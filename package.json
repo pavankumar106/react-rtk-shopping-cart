@@ -6,6 +6,7 @@
   "homepage": "https://pavankumar106.github.io/react-rtk-shopping-cart",
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",

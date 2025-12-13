@@ -21,7 +21,10 @@ const Cart = () => {
       {items.length > 0 && (
         <div className="cartTotal">
           <span className="totalLabel">Total:</span>
-          <span className="totalPrice">price USD</span>
+          <span className="totalPrice">
+            price{" "}
+            {items.reduce((total, item) => total + item.price, 0).toFixed(2)}
+          </span>
         </div>
       )}
     </div>
